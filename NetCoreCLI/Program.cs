@@ -4,7 +4,7 @@ using NetCoreCLI.Commands;
 namespace NetCoreCLI
 {
     [HelpOption(Inherited = true)]
-    [Command(Description = "A tools to communicate with web api"),
+    [Command(Description = "A tool to communicate with web api"),
      Subcommand(typeof(ConfigCommand))]
     class Program
     {

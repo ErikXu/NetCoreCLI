@@ -7,22 +7,22 @@ Use .Net Core to Write a CLI tool
 
 2. Clone Repository
 
-```
-git clone https://github.com/ErikXu/NetCoreCLI.git
-```
+   ```
+   git clone https://github.com/ErikXu/NetCoreCLI.git
+   ```
 
 3. Build CLI tool
 
-cd NetCoreCLI
+   cd NetCoreCLI
 
-Publish for Linux
+   Publish for Linux
 
-```
-dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true
-```
+   ```
+   dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true
+   ```
 
-Publish for Windows
+   Publish for Windows
 
-```
-dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
-```
+   ```
+   dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
+   ```
