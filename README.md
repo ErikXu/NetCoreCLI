@@ -13,7 +13,9 @@ Use .Net Core to Write a CLI tool
 
 3. Build CLI tool
 
+   ```
    cd NetCoreCLI
+   ```
 
    Publish for Linux
 
