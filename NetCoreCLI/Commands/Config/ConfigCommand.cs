@@ -1,9 +1,9 @@
 ﻿using McMaster.Extensions.CommandLineUtils;
 
-namespace NetCoreCLI.Commands
+namespace NetCoreCLI.Commands.Config
 {
     [Command("config", Description = "Manage config"),
-     Subcommand(typeof(ShowCommand), typeof(SetCommand))]
+     Subcommand(typeof(GetCommand), typeof(SetCommand))]
     public class ConfigCommand
     {
         private int OnExecute(CommandLineApplication app, IConsole console)

@@ -57,12 +57,13 @@ namespace WebApi.Controllers
         {
             var items = _cache.Get<List<Item>>(_key);
 
-            var item = items.SingleOrDefault(n => n.Id == id);
-            if (item != null)
+            var item = items?.SingleOrDefault(n => n.Id == id);
+            if (item == null)
             {
-                items.Remove(item);
+                return NotFound();
             }
 
+            items.Remove(item);
             _cache.Set(_key, items);
 
             return Ok();
