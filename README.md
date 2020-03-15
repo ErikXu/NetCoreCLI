@@ -14,7 +14,7 @@ Use .Net Core to Write a CLI tool
 3. Build CLI tool
 
    ```
-   cd NetCoreCLI
+   cd src/NetCoreCLI
    ```
 
    Publish for Linux
@@ -28,3 +28,13 @@ Use .Net Core to Write a CLI tool
    ```
    dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
    ```
+
+   Publish for Mac
+
+   ```
+   dotnet publish -c Release -r osx-x64 /p:PublishSingleFile=true
+   ```
+
+More info:
+
+[https://docs.microsoft.com/en-us/dotnet/core/rid-catalog#using-rids](https://docs.microsoft.com/en-us/dotnet/core/rid-catalog#using-rids)  
