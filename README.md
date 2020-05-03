@@ -20,19 +20,19 @@ Use .Net Core to Write a CLI tool
    Publish for Linux
 
    ```
-   dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true
+   dotnet publish -c Release -r linux-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true
    ```
 
    Publish for Windows
 
    ```
-   dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
+   dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true
    ```
 
    Publish for Mac
 
    ```
-   dotnet publish -c Release -r osx-x64 /p:PublishSingleFile=true
+   dotnet publish -c Release -r osx-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true
    ```
 
 More info:
